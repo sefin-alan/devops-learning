@@ -1,0 +1,12 @@
+# Intro to Linux
+
+## Key Concepts
+
+- Absolute Paths: These specify a location starting from the root. They always begin with a '/' (e.g /home/user/docs)
+- Relative Paths: These specify a location relative to your current working directory. They do not start with a '/'. Common shortcuts include . (current directory) and .. (Parent Directory)
+
+## Commands
+
+- pwd: Prints the absolute path of your current working directory to see where you are in the file system
+
+- ls: Lists the visible files and directories in your current location. It's like a basic request i.e. "Show me what's here"
