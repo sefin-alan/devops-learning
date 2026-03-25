@@ -10,3 +10,9 @@
 - pwd: Prints the absolute path of your current working directory to see where you are in the file system
 
 - ls: Lists the visible files and directories in your current location. It's like a basic request i.e. "Show me what's here"
+
+- mkdir: Creates a new directory, so mkdir hello would create the folder "hello"
+
+- rmdir: Removes a directory. so rmdir hello would remove the folder "hello" (rmdir only applies to directories, rm would be used for a file)
+
+- touch: Creates a file, so touch hello.txt would create the hello.txt file
