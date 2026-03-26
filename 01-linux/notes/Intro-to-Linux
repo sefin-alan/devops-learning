@@ -16,3 +16,9 @@
 - rmdir: Removes a directory. so rmdir hello would remove the folder "hello" (rmdir only applies to directories, rm would be used for a file)
 
 - touch: Creates a file, so touch hello.txt would create the hello.txt file
+
+- cat: Primarily used to read contents of a file but can also be used to create a new file
+
+- mv: Used to move files
+
+
