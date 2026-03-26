@@ -2,14 +2,25 @@
 
 ## Key Concepts
 
-- Absolute Paths: These specify a location starting from the root. They always begin with a '/' (e.g /home/user/docs)
-- Relative Paths: These specify a location relative to your current working directory. They do not start with a '/'. Common shortcuts include . (current directory) and .. (Parent Directory)
+- Root Directory (/): The top of the Linux file system, which everything branches from
+- Absolute Paths: These full path starting from the root. Always beginS with '/' (e.g /home/user/docs)
+- Relative Paths: The path relative to your current working directory/location. Common shortcuts include '.' (current/working directory) and '..' (Parent Directory)
+
+Linux Commands are textual instructions that tell the OS what to do, they are:
+
+- Case sensitive
+- Have various options e.g. '-a' and arguments '.' that can modify their behaviour
+- Have instructions via Manual
 
 ## Commands
 
-- pwd: Prints the absolute path of your current working directory to see where you are in the file system
+- man: Provides manual to a particular command e.g man ls
 
-- ls: Lists the visible files and directories in your current location. It's like a basic request i.e. "Show me what's here"
+- pwd: Prints the absolute path to see where you are in the file system
+
+- ls: Lists the visible files and directories in your current location/folder e.g. Use relative path (ls Linux) when you're nearby or use absolute path (ls /home/user/Linux) when somewhere completely different in the system
+
+- ls -a: Lists all files, including hidden 'dotfiles'
 
 - mkdir: Creates a new directory, so mkdir hello would create the folder "hello"
 
@@ -19,6 +30,6 @@
 
 - cat: Primarily used to read contents of a file but can also be used to create a new file
 
-- mv: Used to move files
+- mv: Used to move or rename files
 
 
