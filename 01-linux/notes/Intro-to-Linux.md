@@ -18,6 +18,8 @@ Linux Commands are textual instructions that tell the OS what to do, they are:
 
 - pwd: Prints the absolute path to see where you are in the file system
 
+- ~: Shortcut for your home directory e.g cd ~ takes you home from anywhere in the system. /home and ~ are different, /home is a system directory (restricted), while ~ is YOUR personal home folder (full access)
+
 - ls: Lists the visible files and directories in your current location/folder e.g. Use relative path (ls Linux) when you're nearby or use absolute path (ls /home/user/Linux) when somewhere completely different in the system
 
 - ls -a: Lists all files, including hidden 'dotfiles'
@@ -31,5 +33,7 @@ Linux Commands are textual instructions that tell the OS what to do, they are:
 - cat: Primarily used to read contents of a file but can also be used to create a new file
 
 - mv: Used to move or rename files
+
+- grep: used to search for specific pattern/content of text within a file, highlights the pattern you request e.g. grep "hello" file.txt, highlights "hello" only.
 
 
