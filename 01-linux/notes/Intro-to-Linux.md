@@ -22,6 +22,8 @@ Linux Commands are textual instructions that tell the OS what to do, they are:
 
 - ls: Lists the visible files and directories in your current location/folder e.g. Use relative path (ls Linux) when you're nearby or use absolute path (ls /home/user/Linux) when somewhere completely different in the system
 
+- ls -F: Lists files with indicators (/ for directories) to easily distinguish between files and folders
+
 - ls -a: Lists all files, including hidden 'dotfiles'
 
 - mkdir: Creates a new directory, so mkdir hello would create the folder "hello"
