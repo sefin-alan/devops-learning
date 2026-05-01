@@ -12,7 +12,7 @@ Linux Commands are textual instructions that tell the OS what to do, they are:
 - Have various options e.g. '-a' and arguments '.' that can modify their behaviour
 - Have instructions via Manual
 
-## Commands
+## Basic Commands
 
 - man: Provides manual to a particular command e.g man ls
 
