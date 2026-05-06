@@ -4,6 +4,8 @@
 
 - ls -a: Lists all files, including hidden 'dotfiles'
 
+- ls -l: Displays user permissions and what each user type is allowed to do
+
 - mkdir: Creates a new directory, so mkdir hello would create the folder "hello"
 
 - rmdir: Removes a directory. so rmdir hello would remove the folder "hello" (rmdir only applies to directories, rm would be used for a file)
