@@ -16,6 +16,8 @@
 
 - mv: Used to move or rename files
 
-- grep: used to search for specific pattern/content of text within a file, highlights the pattern you request e.g. grep "hello" file.txt, highlights "hello" only.
+- grep: Used to search for specific pattern/content of text within a file, highlights the pattern you request e.g. grep "hello" file.txt, highlights "hello" only.
 
-- sudo: runs a single command with admin privileges, normal permissions resume for the next command
+- sudo: Runs a single command with admin privileges, normal permissions resume for the next command
+
+- echo: Prints text according to the argument, can also create a file but giving it a file name that does not exist
