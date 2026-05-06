@@ -4,7 +4,7 @@
 
 - ls -a: Lists all files, including hidden 'dotfiles'
 
-- ls -l: Displays user permissions and what each user type is allowed to do
+- ls -l: Displays user permissions and timestamp for the creation of a file or directory
 
 - mkdir: Creates a new directory, so mkdir hello would create the folder "hello"
 
