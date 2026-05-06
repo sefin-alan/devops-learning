@@ -12,7 +12,7 @@
 
 - touch: Creates an empty file, so touch hello.txt would create the hello.txt file, can also update timestamp of existing file
 
-- cat: Primarily used to read contents of a file but can also be used to create a new file
+- cat: Primarily used to read contents of a file but can also be used to create a new file, combine files into a new file, and copy the contents of one file into another file using '>> (filename)'
 
 - mv: Used to move or rename files
 
@@ -20,4 +20,4 @@
 
 - sudo: Runs a single command with admin privileges, normal permissions resume for the next command
 
-- echo: Prints text according to the argument, can also create a file but giving it a file name that does not exist
+- echo: Displays a line of text, can also create a file by giving it a file name that does not already exist
