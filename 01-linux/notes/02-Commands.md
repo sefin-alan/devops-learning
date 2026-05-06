@@ -17,3 +17,5 @@
 - mv: Used to move or rename files
 
 - grep: used to search for specific pattern/content of text within a file, highlights the pattern you request e.g. grep "hello" file.txt, highlights "hello" only.
+
+- sudo: runs a single command with admin privileges, normal permissions resume for the next command
