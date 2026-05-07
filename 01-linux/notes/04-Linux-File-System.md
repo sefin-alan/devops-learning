@@ -14,17 +14,12 @@
 - echo "Hello World" just displays Hello World, but this output can be redirected to another file (e.g myfile.txt) using a > so in full, echo "Hello World" > myfile.txt which will generate or overwrite the first string with "Hello World in the respective file
 - To add text to an existing file without overwriting the first line, you can use >> instead of > to add additional content, then verify that this has been done by using **[cat](02-Commands.md)** to read the contents of the file
 
+## Viewing Large Files
 
-
-
-
-
-
-
-
-
-
-
+- 'head' and 'tail' are used to view the first and last 10 lines of a file, this may be needed when you want to view only a certain number of strings in a large file
+- Paired with the argument '-n', you can specify the number of lines you want to see
+- Both 'head' and 'tail' can be used together to view a specific section with the pipe symbol ( | )
+- For example, multiline.txt has 15 lines, to view lines 6-11, you would run 'head -n 11 | tail -n 6'
 
 ## Definitions
 
