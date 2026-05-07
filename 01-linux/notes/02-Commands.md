@@ -21,3 +21,7 @@
 - sudo: Runs a single command with admin privileges, normal permissions resume for the next command
 
 - echo: Displays a line of text, can also create a file by giving it a file name that does not already exist
+
+- head: Displays first 10 strings of a file - tail: Displays last 10 string of a file
+
+- 
