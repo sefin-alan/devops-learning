@@ -11,7 +11,7 @@
 
 - **[touch](02-Commands.md)** creates an empty file but if used on an existing file, it will update the timestamp for its creation which can be viewed by **[ls -l](02-Commands.md)**
 - **[echo](02-Commands.md)** is used to display a **[string](#string)** that is passed as an **[argument](#argument)**
-- echo "Hello World" just displays Hello World, but this output can be redirected to another file (e.g myfile.txt) using a > so in full, echo "Hello World" > myfile.txt which will generate or overwrite the first string with "Hello World in the respective file
+- echo "Hello World" just displays Hello World, but this output can be redirected to another file (e.g myfile.txt) using a > so 'echo "Hello World" > myfile.txt' will generate or overwrite the first string with "Hello World" in the respective file
 - To add text to an existing file without overwriting the first line, you can use >> instead of > to add additional content, then verify that this has been done by using **[cat](02-Commands.md)** to read the contents of the file
 
 ## Viewing Large Files
