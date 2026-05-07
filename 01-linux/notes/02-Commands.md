@@ -8,7 +8,7 @@
 
 - mkdir: Creates a new directory, so mkdir hello would create the folder "hello"
 
-- rmdir: Removes a directory. so rmdir hello would remove the folder "hello" (rmdir only applies to directories, rm would be used for a file)
+- rmdir: Removes a directory. so rmdir hello would remove the folder "hello" (rmdir only applies to directories, **rm** would be used for a file)
 
 - touch: Creates an empty file, so touch hello.txt would create the hello.txt file, can also update timestamp of existing file
 
@@ -24,4 +24,6 @@
 
 - head: Displays first 10 strings of a file - tail: Displays last 10 string of a file
 
-- 
+- cp: Copies a file or directory
+
+- rm: Removes a file
