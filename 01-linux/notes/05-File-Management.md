@@ -10,6 +10,12 @@
 
 'mkdir -p project/src/components' will create a **[nested directory](#nested-directory)**. As 'project' contains '/src/' which contains '/components', it cannot be deleted with rm since it is not an empty directory. ls -R can be used to view this directory structure in its entirety, and 'rm -r' will remove the whole structure. 'rmdir' could be used to remove '/components' alone as it is an empty directory.
 
+## Dealing with Spaces in Folder Names
+
+- To create a directory with a space in its name e.g. "My Project", the name must be either encapsulated in speech marks, or have the words be separated with a backslash ( \ )
+- As a command, it would look like this: 'mkdir "My Project"' or 'mkdir My\ Project\ 2'
+- This same concept applies when navigating to such a directory
+
 ## Definitions
 
 ### Nested Directory
