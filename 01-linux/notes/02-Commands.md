@@ -6,7 +6,7 @@
 | ls | list files |
 | ls -l | list files with user permissions and timestamp |
 | ls -a | list hidden files |
-| ls -F | List files with indicators |
+| ls -R | view full nested directory structure |
 | pwd | show current location |
 | cd | navigate directories |
 | cd ~ | navigate to home directory |
