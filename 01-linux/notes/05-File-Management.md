@@ -8,9 +8,9 @@
 
 ### Practical Example
 
-'mkdir -p project/src/components' will create a **[nested directory](#nested-directory)**. As 'project' contains '/src/' which contains '/components', it cannot be deleted with rm since it is not an empty directory. ls -R can be used to view this directory structure in its entirety, and 'rm -r' will remove the whole structure. 'rmdir' could be used to remove '/components'alone as it is an empty directory.
+'mkdir -p project/src/components' will create a **[nested directory](#nested-directory)**. As 'project' contains '/src/' which contains '/components', it cannot be deleted with rm since it is not an empty directory. ls -R can be used to view this directory structure in its entirety, and 'rm -r' will remove the whole structure. 'rmdir' could be used to remove '/components' alone as it is an empty directory.
 
-## Definition
+## Definitions
 
 ### Nested Directory
 Refers to when there are directories within directories e.g. devops-learning/01-linux/notes
