@@ -13,6 +13,7 @@
 - **[echo](02-Commands.md)** is used to display a **[string](#string)** that is passed as an **[argument](#argument)**
 - echo "Hello World" just displays Hello World, but this output can be redirected to another file (e.g myfile.txt) using a > so 'echo "Hello World" > myfile.txt' will generate or overwrite the first string with "Hello World" in the respective file
 - To add text to an existing file without overwriting the first line, you can use >> instead of > to add additional content, then verify that this has been done by using **[cat](02-Commands.md)** to read the contents of the file
+- cat: Primarily used to read contents of a file but can also be used to create a new file, combine files into a new file, and copy the contents of one file into another file using '>> (filename)'
 
 ## Viewing Large Files
 
