@@ -27,8 +27,8 @@
 ## Navigation
 | Command | What it does | More |
 |---------|-------------|------|
-| ls | lists files | 04-File-System |
-| ls -l | lists files with details | 04-File-System |
+|[ls | lists files | 04-File-System |](01-Intro-to-Linux.md)
+| ls -l | lists files with user permissions and timestamp |
 | ls -a | lists hidden files | 04-File-System |
 | cd | change directory | 04-File-System |
 | pwd | shows current location | 04-File-System |
