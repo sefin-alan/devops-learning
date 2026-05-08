@@ -28,6 +28,14 @@
 | cat | read/create/combine/copy files |
 | grep | search for specific pattern in a file |
 
+## VIM
+
+| Command | What it does |
+|---------|-------------|
+| q | quits file |
+| wq | saves and quits file |
+
+
 ## Users and Permissions
 | Command | What it does |
 |---------|-------------|
