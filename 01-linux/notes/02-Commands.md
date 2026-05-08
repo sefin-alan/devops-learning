@@ -9,7 +9,7 @@
 | ls -R | view full nested directory structure |
 | pwd | show current location |
 | cd | navigate directories |
-| cd ~ | navigate to home directory |
+| cd ~ | shortcut to home directory |
 
 ## File Management
 | Command | What it does |
