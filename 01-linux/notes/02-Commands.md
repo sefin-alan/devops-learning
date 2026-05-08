@@ -32,8 +32,23 @@
 
 | Command | What it does |
 |---------|-------------|
-| q | quits file |
-| wq | saves and quits file |
+| :q | quits file |
+| :wq | saves and quits file |
+| 0 | moves to the beginning of a line |
+| $ | moves to the end of a line |
+| w | moves up by word |
+| b | moves back by word |
+| :linenumber | moves to specified line |
+| /word | moves to specified word |
+| n N | moves up and down each occurence of the specified word |
+| :set number :set nonumber | enable and disable line number visibility |
+| y | copies line |
+| p | pastes line |
+| dd | deletes a whole line |
+| D | deletes from cursor to end of line |
+| u | undo last change and view when it was made |
+| Ctrl + R | redo last change |
+| syntax on | enables highlighting of commands and keywords |
 
 
 ## Users and Permissions
