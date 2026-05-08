@@ -17,7 +17,7 @@
 | cp | copy a file |
 | cp -r| copy a directory |
 | rm | remove a file |
-| rmdir | remove a directory |
+| rmdir | remove empty directory |
 | touch | create empty file/update timestamp |
 | mkdir | create a directory |
 | mkdir -p | creates a nested directory |
