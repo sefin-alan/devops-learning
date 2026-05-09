@@ -55,3 +55,12 @@
 | Command | What it does |
 |---------|-------------|
 | sudo | Run a single command with admin privileges |
+| sudo su | Run multiple commands with admin privileges |
+| whoami | view your current user |
+| exit | return to normal user |
+| sudo useradd username | adds a new user with specified username |
+| sudo passwd username | sets password for new user |
+| su - username | switch to specified user |
+| sudo usermod -aG sudo username | grant user sudo access |
+| sudo deluser newuser sudo | remove user sudo access |
+
