@@ -63,4 +63,6 @@
 | su - username | switch to specified user |
 | sudo usermod -aG sudo username | grant user sudo access |
 | sudo deluser newuser sudo | remove user sudo access |
-
+| sudo groupadd groupname | create new group |
+| sudo groupdel groupname | delete specified group |
+| sudo gpasswd -d username groupname | remove user from specified group |
