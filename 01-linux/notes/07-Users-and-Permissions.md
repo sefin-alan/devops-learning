@@ -66,7 +66,7 @@ Using 'ls -l', displays the permissions of example.txt which are 'rw-r--r--'. Th
 - the group has read only permission (r--)
 - the public has read only permission (r--)
 
-Running 'chmod 750 example.txt'(octal notation) or 'chmod u+x,g+w,o-r example.txt'(string representation), grants:
+Running 'chmod 750 example.txt' (octal notation) or 'chmod u+x,g+w,o-r example.txt' (string representation), grants:
 - full permissions to the user
 - read + write permissions to the group
 - removes all permissions from the public
