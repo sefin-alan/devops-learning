@@ -48,7 +48,8 @@ Practical Example: 'sudo useradd newuser, sudo passwd newuser, su - newuser
 
 - file permissions control who can read(r), write/modify(w), and execute(x) a file
 - permissions are assigned to the 3 categories listed below:
+
 ![alt text](rwx.png)
-- the user category is the owner of the file and the user you are logged in as, the group category is the group of users with similar permissions, other rights represents everyone else's permissions
+- the **user** category is the owner of the file and the user you are logged in as, the **group** category is the group of users with similar permissions, **other rights** represents everyone else's permissions
 
 
