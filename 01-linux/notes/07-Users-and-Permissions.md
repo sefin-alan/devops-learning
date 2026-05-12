@@ -49,12 +49,12 @@ Practical Example: 'sudo useradd newuser, sudo passwd newuser, su - newuser
 - file permissions control who can read(r), write/modify(w), and execute(x) a file
 - permissions are assigned to the 3 categories listed below:
 
-![alt text](rwx.png)
+![alt text](../images/rwx.png)
 - the **user** category is the owner of the file and the user you are logged in as, the **group** category is the group of users with similar permissions, **other rights** represents everyone else/the public's permissions
 
 ## Binary, Octal and String Representation
 
-![alt text](binaryoctalstring.png)
+![alt text](../images/binaryoctalstring.png)
 - r,w,x are always equivalent to 4,2,1 respectively
 - the octal notation or string representation can be used when setting file permissions in the command line
 - this is paired with **'[chmod](02-Commands.md)'** to change the permissions of a file or directory 
