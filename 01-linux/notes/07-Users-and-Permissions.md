@@ -54,7 +54,7 @@ Practical Example: 'sudo useradd newuser, sudo passwd newuser, su - newuser
 
 ## Binary, Octal and String Representation
 
-![alt text](../images/binaryoctalstring.png)
+![alt text](binaryoctalstring.png)
 - r,w,x are always equivalent to 4,2,1 respectively
 - the octal notation or string representation can be used when setting file permissions in the command line
 - this is paired with **'[chmod](02-Commands.md)'** to change the permissions of a file or directory 
