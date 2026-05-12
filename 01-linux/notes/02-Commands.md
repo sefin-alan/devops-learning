@@ -4,7 +4,6 @@
 | Command | What it does |
 |---------|-------------|
 | ls | list files |
-| ls -l | list files with user permissions and timestamp |
 | ls -a | list hidden files |
 | ls -R | view full nested directory structure |
 | pwd | show current location |
@@ -54,6 +53,7 @@
 ## Users and Permissions
 | Command | What it does |
 |---------|-------------|
+| ls -l | list files with user permissions and timestamp |
 | sudo | Run a single command with admin privileges |
 | sudo su | Run multiple commands with admin privileges |
 | whoami | view your current user |
@@ -66,3 +66,5 @@
 | sudo groupadd groupname | create new group |
 | sudo groupdel groupname | delete specified group |
 | sudo gpasswd -d username groupname | remove user from specified group |
+| chmod | change the permissions of a file or directory |
+| 
