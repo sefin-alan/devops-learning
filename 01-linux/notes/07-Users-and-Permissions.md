@@ -4,7 +4,7 @@
 
 - Every file and directory has permissions that control who can read,write or execute it
 - A "Permission Denied" error may cccur when you try to write to a location you don't have access to. (Navigate to home directory with cd ~ where you have full write permissions)
-- You can also use [ls -l](02-Commands.md) to view permissions where you may see **[-rwxr-xr--](#file-permissions)** which shows what each user type is allowed to do
+- You can also use [ls -l](02-Commands.md) to view permissions where you may see **[-rwxr-xr--](#file-permissions)** which shows what each user type is allowed to do, followed by the **owner** user and **group** of the file
 
 ## The 'sudo' Command
 
@@ -35,7 +35,7 @@ Practical Example: 'sudo useradd newuser, sudo passwd newuser, su - newuser
 
 ## Groups
 
-- 'cat /etc/group' displays all the groups with the linux file system
+- **'cat /etc/group'** displays all the groups with the linux file system
 - when a user is added to a specific goup, they are permitted to use that group's proprietary capabilities e.g. 'newuser' was added to the sudo group by using 'sudo usermod -aG' followed by the specified group and username
 - Users can be **added to multiple groups** by including multiple group names when using 'sudo usermod -aG' and separating them with a comma, **for example:'sudo usermod -aG admin1,admin2 newuser'**
 ### Important Commands
@@ -59,9 +59,9 @@ Practical Example: 'sudo useradd newuser, sudo passwd newuser, su - newuser
 - the octal notation or string representation can be used when setting file permissions in the command line
 - this is paired with **'[chmod](02-Commands.md)'** to change the permissions of a file or directory 
 
-### Practical Example
+### Changing Permissions Example
 
-Using 'ls -l', displays the permissions of example.txt which are 'rw-r--r--'. This means that:
+Using 'ls -l' displays the permissions of example.txt which are 'rw-r--r--'. This means that:
 - the user only has read and write permissions (rw-)
 - the group has read only permission (r--)
 - the public has read only permission (r--)
@@ -71,4 +71,11 @@ Running 'chmod 750 example.txt' (octal notation) or 'chmod u+x,g+w,o-r example.t
 - read + write permissions to the group
 - removes all permissions from the public
 
-Tip: You can apply a specific permission to all categories by not specifying any category so 'chmod +x example.txt" grants all parties execute permission.
+Tip: You can apply a specific permission to multiple user types in one command e.g. 'chmod ug=rw,o=r example.txt' or you can apply a permission to all groups by not specifying any user type so 'chmod +x example.txt" grants all parties execute permission.
+
+### Changing Ownership
+
+Using 'ls -l' displays the owner and group of example.txt next to the permissions
+- you can change the owner and group with **['chown'](02-Commands.md)** and **['chgrp'](02-Commands.md)** respectively
+- this can be done in one command by running 'chown newuser:admin2 example.txt'to change the ownership to newuser and the group to admin2
+- the **['-R option'](02-Commands.md) (recursion) with 'chown' can be used to change the ownership and group of a directory AND everything in it
