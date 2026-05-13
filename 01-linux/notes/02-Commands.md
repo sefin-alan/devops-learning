@@ -67,4 +67,7 @@
 | sudo groupdel groupname | delete specified group |
 | sudo gpasswd -d username groupname | remove user from specified group |
 | chmod | change the permissions of a file or directory |
-| 
+| chown username filename| change the owner of file or directory |
+| chgrp groupname filename | change the group of a file or directory|
+| chown username:groupname | change the owner and group of a file or directory|
+| chown -R | change the owner and group of a file or directory as well as its contents |
