@@ -24,7 +24,8 @@ There are 2 ways of setting environment variables:
  e.g. '# export JAVA_HOME = /usr/bin/java' (use 'echo $NAME' to ensure it has been set)
 
 - **Permanent Setting**: add 'export NAME = VALUE' to ~/.bashrc or ~/.zshrc permanently sets environment variable so it loads automatically everytime the shell starts
- - run 'source ~/.bashrc or ~/.zshrc' to apply changes without restarting the terminal
+
+Tip: run 'source ~/.bashrc or ~/.zshrc' to apply changes without restarting the terminal
 
 Bashrc and Zshrc are configuration files located in the home directory containing configuration of specific shells.
 
