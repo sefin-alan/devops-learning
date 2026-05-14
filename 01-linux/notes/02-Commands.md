@@ -71,3 +71,19 @@
 | chgrp groupname filename | change the group of a file or directory|
 | chown username:groupname | change the owner and group of a file or directory|
 | chown -R | change the owner and group of a file or directory as well as its contents |
+
+## Standard Streams
+| Command | What it does |
+|---------|-------------|
+| > | redirects stdout to a file |
+| < | redirects stdin from a file |
+| 2> | redirects stderr to a file |
+| &> | redirects both stdout and stderr to a file |
+
+## Environment Variables
+| Command | What it does |
+|---------|-------------|
+| export | sets an environment variable |
+| source | reloads a config file wihout restarting the terminal |
+| printenv | prints all environment variables |
+
