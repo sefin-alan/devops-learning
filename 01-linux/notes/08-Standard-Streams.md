@@ -12,6 +12,7 @@ There are 3 standard streams:
 **Standard Input**
 
 echo "This is a test file" > input.txt'
+
 cat < input.txt
 
 - ["This is a test file" >] and [< input.txt] are the standard inputs
