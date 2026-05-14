@@ -23,7 +23,7 @@ There are 2 ways of setting environment variables:
 - **Temporary Setting**: 'export NAME = VALUE' temporarily sets environment variable in the current terminal session
  e.g. '# export JAVA_HOME = /usr/bin/java' (use 'echo $NAME' to ensure it has been set)
 
-- **Permanent Setting**: add 'export NAME = VALUE' to '~/.bashrc or ~/.zshrc' permanently sets environment variable so it loads automatically everytime the shell starts
+- **Permanent Setting**: adding 'export NAME = VALUE' into '~/.bashrc or ~/.zshrc' permanently sets environment variable so it loads automatically everytime the shell starts
 
 Tip: run 'source ~/.bashrc or ~/.zshrc' to apply changes without restarting the terminal
 
