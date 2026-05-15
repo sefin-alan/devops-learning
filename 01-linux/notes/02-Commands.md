@@ -35,6 +35,7 @@
 | :wq | saves and quits file |
 | 0 | moves to the beginning of a line |
 | $ | moves to the end of a line |
+| o | moves to the start of a new line and into insert mode |
 | w | moves up by word |
 | b | moves back by word |
 | :linenumber | moves to specified line |
