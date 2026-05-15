@@ -24,7 +24,9 @@ There are 2 ways of setting environment variables:
 
 - **Temporary Setting**: 'export NAME = VALUE' temporarily sets environment variable in the current terminal session
 
-**Example:** ![alt text](../images/tempexportenv.png)
+**Example:** 
+
+![alt text](../images/tempexportenv.png)
 - [echo $HOME] accesses the the environment variable
 - [export MY_VAR="Hello World"] sets the variable MY_VAR with the value "Hello World"
 - [echo $MY_VAR] used to ensure it has been set
@@ -35,7 +37,7 @@ There are 2 ways of setting environment variables:
 - [vim .zshrc] accesses the configuration file
 - [export MY_VAR="Hello World"] is added to a new line, then save and exit
 - [source .zshrc] applies changes without restarting the terminal
-- [echo $MY_VAR] used after restarting terminal, to ensure it has permanently been set
+- [echo $MY_VAR] used after restarting terminal, to ensure it has been set permanently
 
 *Bashrc and Zshrc are configuration files located in the home directory containing configuration of specific shells.
 
