@@ -16,7 +16,7 @@ There are 3 standard streams:
 
 Useful Tips: 
 - use **&>** to redirect both stdout and stderr at the same time, this is useful for viewing where a command succeeded and where it failed
-- /dev/null is essentially a black hole for output as anything that is redirected here is discarded, this is useful for supressing stdout, stderr or both that you don't need
+- **/dev/null** is essentially a black hole for output as anything that is redirected here is discarded, this is useful for supressing stdout, stderr or both that you don't need
 
 ### Practical Examples
 
