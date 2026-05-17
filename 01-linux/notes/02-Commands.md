@@ -81,10 +81,11 @@
 | 2> | redirects stderr to a file |
 | &> | redirects both stdout and stderr to a file |
 
-## Environment Variables
+## Environment Variables and Aliases
 | Command | What it does |
 |---------|-------------|
 | export | sets an environment variable |
 | source | reloads a config file wihout restarting the terminal |
 | printenv | prints all environment variables |
+| alias | prints the list of current aliases |
 
