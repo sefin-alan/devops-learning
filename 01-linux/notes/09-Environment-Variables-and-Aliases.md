@@ -46,11 +46,32 @@ There are 2 ways of setting environment variables:
 ## Adding to Environment Variables
 
 - to add directories to existing environment variables e.g. $PATH, run [export PATH=$PATH:/home/ubuntu]
-- any executable script in /home/ubuntu will be recognised as a program as $PATH is where the system looks for executables
+- any executable script in **/home/ubuntu** will be recognised as a program as $PATH is where the system looks for executables
 
 **Example:**
 
-[vim greet.sh]
+![alt text](../images/add$PATH.png)
+
+- [export PATH=$PATH] the PATH variable will be updated along with what it already contains ($PATH)
+- [:/home/ubuntu] the colon signifies that the following directories will be added
+- [echo $PATH] view the PATH environment variable to see that the change has been made
+
+The system will now look for executables in the **/home/ubuntu** directories so it can run any executable script within it.
+
+![alt text](../images/addscript.png)
+
+- [vim greet.sh] creates and opens the greet.sh file
+- [#!/bin/bash
+'# A simple script to greet the user'
+echo "Hello, $USER! Welcome to $HOSTNAME."] the script that was inserted into greet.sh
+- [chmod +x greet.sh] grants execute permission to greet.sh, turning it into an executable file
+- [./greet.sh] runs the executable file
+
+## Aliases
+
+
+
+
 
 
 
