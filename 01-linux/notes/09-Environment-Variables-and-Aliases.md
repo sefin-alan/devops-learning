@@ -22,7 +22,7 @@ Some examples of Environment Variables are:
 
 There are 2 ways of setting environment variables:
 
-- **Temporary Setting**: 'export NAME = VALUE' temporarily sets environment variable in the current terminal session
+**Temporary Setting**: 'export NAME = VALUE' temporarily sets environment variable in the current terminal session
 
 **Example:** 
 
@@ -31,7 +31,7 @@ There are 2 ways of setting environment variables:
 - [export MY_VAR="Hello World"] sets the variable MY_VAR with the value "Hello World"
 - [echo $MY_VAR] used to ensure it has been set
 
-- **Permanent Setting**: adding 'export NAME = VALUE' into 'vim .bashrc or .zshrc' permanently sets environment variable so it loads automatically everytime the shell starts
+**Permanent Setting**: adding 'export NAME = VALUE' into 'vim .bashrc or .zshrc' permanently sets environment variable so it loads automatically everytime the shell starts
 
 **Example:**
 - [vim .zshrc] accesses the configuration file
