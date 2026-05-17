@@ -69,7 +69,18 @@ echo "Hello, $USER! Welcome to $HOSTNAME."] the script that was inserted into gr
 
 ## Aliases
 
+### Key Concepts
 
+- aliases are shortcuts that allow you to create custom commands 
+- this is useful for commands that you will use frequently, whether they're for git, docker, kubernetes
+- run 'alias' in the terminal to view the list of current aliases
+
+**Example:**
+
+![alt text](../images/alias.png)
+
+- this method creates a **temporary alias**
+- to create a **permanent alias**, insert [alias hello='echo "Hello World"'] into [vim .zshrc] and save with [source .zshrc]
 
 
 
