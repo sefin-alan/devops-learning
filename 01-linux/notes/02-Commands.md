@@ -26,6 +26,7 @@
 | mv | move/rename a file |
 | cat | read/create/combine/copy files |
 | grep | search for specific pattern in a file |
+| file | prints file type |
 
 ## VIM
 
