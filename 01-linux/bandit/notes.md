@@ -18,3 +18,6 @@
 
 ### Level 4-5: The password is stored in the only human-readable file in the **inhere** directory
 
+- [cd inhere] -> [file ./*] lists every file type in the directory -> -file07 is the only text file -> [cat ./-file07]
+
+### The password is stored in a file somewhere under the inhere directory and has all of the following properties: human-readable, 1033 bytes in size, not executable
