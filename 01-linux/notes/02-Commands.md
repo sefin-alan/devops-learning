@@ -12,6 +12,7 @@
 | find | search for files |
 | sort | sorts all lines into alphabetical order |
 | uniq | prints or omits duplicate lines |
+| strings | prints only human-readable text from a file |
 
 ## File Management
 | Command | What it does |
