@@ -9,6 +9,7 @@
 | pwd | show current location |
 | cd | navigate directories |
 | cd ~ | shortcut to home directory |
+| find | search for files |
 
 ## File Management
 | Command | What it does |
