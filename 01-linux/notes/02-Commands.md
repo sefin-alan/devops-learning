@@ -10,6 +10,8 @@
 | cd | navigate directories |
 | cd ~ | shortcut to home directory |
 | find | search for files |
+| sort | sorts all lines into alphabetical order |
+| uniq | prints or omits duplicate lines |
 
 ## File Management
 | Command | What it does |
