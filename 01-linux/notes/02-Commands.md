@@ -9,10 +9,6 @@
 | pwd | show current location |
 | cd | navigate directories |
 | cd ~ | shortcut to home directory |
-| find | search for files |
-| sort | sorts all lines into alphabetical order |
-| uniq | prints or omits duplicate lines |
-| strings | prints only human-readable text from a file |
 
 ## File Management
 | Command | What it does |
@@ -24,6 +20,7 @@
 | touch | create empty file/update timestamp |
 | mkdir | create a directory |
 | mkdir -p | creates a nested directory |
+| mktemp | can create temporary file or directory |
 | head | displays first 10 lines of a file |
 | tail | displays last 10 lines of a file|
 | echo | displays a line of text/create a file |
@@ -31,6 +28,15 @@
 | cat | read/create/combine/copy files |
 | grep | search for specific pattern in a file |
 | file | prints file type |
+| find | search for files |
+| strings | prints only human-readable text from a file |
+| du | shows disk usage of files and directories |
+| sort | sorts all lines into alphabetical order |
+| uniq | prints or omits duplicate lines |
+| tr | translates or deletes characters from a file |
+| xxd | make a hex dump or do the reverse |
+| gzip/bzip2 -d | extract gzip/bzip2 file |
+| tar -xf | extract tar |
 
 ## VIM
 
