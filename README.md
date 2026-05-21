@@ -36,34 +36,3 @@ Each module contains:
 | 07 - Terraform | Not Started | 0/0 | 0/0 | 0/0 |
 | 08 - CI/CD | Not Started | 0/0 | 0/0 | 0/0 |
 | 09 - Kubernetes | Not Started | 0/0 | 0/0 | 0/0 |
-
-## How to Use This Repo
-
-### Completing Labs
-
-Document what you did and what you learned:
-
-```bash
-touch 01-linux/labs/lab01-basic-commands.md
-```
-
-Include commands, outputs, and any errors you hit.
-
-### Building Projects
-
-Create a folder with your code and a README:
-
-```
-01-linux/projects/backup-script/
-├── backup.sh
-└── README.md
-```
-
-## Useful Links
-
-- [CoderCo Community](https://www.skool.com/coderco)
-- [CoderCo Dotfiles](https://github.com/coderco-learning/dotfiles)
-
-## License
-
-MIT – Use this template however you like.
