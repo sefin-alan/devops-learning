@@ -8,5 +8,5 @@ Extract the readable text and filter for the lines containing =
 strings data.txt | grep '='
 ```
 
-**What I learned:**[strings data.txt] extracts only human-readable text and [grep '='] filters and prints the lines containing =
+**What I learned:** [strings data.txt] extracts only human-readable text and [grep '='] filters and prints the lines containing =
 
