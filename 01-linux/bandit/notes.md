@@ -12,7 +12,7 @@ What I learned: ./ prefix ensures that the shell treats '-' as the name (can als
 
 ### Level 2-3: The password is stored in a file called --spaces in this filename-- located in the home directory
 
-- [cat ./--"spaces in this filename--] to read the file
+- [cat ./--spaces in this filename--] to read the file
 
 ### Level 3-4: The password is stored in a hidden file in the **inhere** directory
 
@@ -69,3 +69,5 @@ What I learned: The ROT13 cipher, so 'a' is mapped to 'n', 'b' is mapped to 'o' 
 - [mktemp -d] -> [cp data.txt /tmp/tmp.9mXQpTeqeO] -> [cd /tmp/tmp.9mXQpTeqeO] -> [cat data.txt | [**xxd -r**](../notes/02-Commands.md) tempdata.txt] outputs into newly created file named 'tempdata.txt' -> [file tempdata.txt] printed file type [tempdata.txt: gzip compressed data] -> [**mv** tempdata.txt tempdata.txt.gz] -> [[**gzip -d**](../notes/02-Commands.md) tempdata.txt.gz] -> [tempdata.txt] -> [file tempdata.txt] (this process 'file, mv rename to filetype, filetype -d or tar -xf' is followed until file has been fully decompressed)
 
 What I learned: Files have to be renamed to reflect their filetype before extracting them with that filetype's extraction option i.e. gzip -d extracts '.gz.' file. When extracting gzip and bzip2 the file is **replaced** by the extracted output, but with tar, the contents are extracted **alongside** the original archive, so a new file/s will appear next to it. A **hexdump** is a representation of a file's binary data displayed in hexadecimal format that is used to inspect raw file content.
+
+### Level 
