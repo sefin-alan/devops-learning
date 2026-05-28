@@ -1,6 +1,6 @@
 # Commands
 
-## Navigation
+## Basic Navigation
 | Command | What it does |
 |---------|-------------|
 | ls | list files |
@@ -99,4 +99,10 @@
 | source | reloads a config file wihout restarting the terminal |
 | printenv | prints all environment variables |
 | alias | prints the list of current aliases |
+
+## Networking
+| Command | What it does |
+|---------|-------------|
+| nc | send and receive data over a network connection |
+| nmap | scan networks and discover open ports/services |
 
