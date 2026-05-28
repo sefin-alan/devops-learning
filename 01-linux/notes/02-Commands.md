@@ -103,6 +103,6 @@
 ## Networking
 | Command | What it does |
 |---------|-------------|
-| nc | send and receive data over a network connection |
+| nc | connect to a IP Address and port to send and receive data over a network |
 | nmap | scan networks and discover open ports/services |
 
