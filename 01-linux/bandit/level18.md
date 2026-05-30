@@ -8,4 +8,4 @@ Run ssh with an argument to read the password file as soon as you login
 ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"
 ```
 
-**What I learned:** Passing a command directly into ssh bypasses the interactive shell which is why the logout was not triggered 
+**What I learned:** Passing a command directly into ssh bypasses the interactive shell which is why the logout was not triggered. This concept is used a lot in DevOps for running remote commands on servers.
