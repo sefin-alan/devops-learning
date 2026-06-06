@@ -3,11 +3,7 @@
 ## Password
 gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
 ## Method
-This level starts similarly to the previous two levels
-```
-cat cronjob_bandit24.sh
-```
-Prints the cron jobs into the terminal, the breakdown of them is [here](#what-i-learned)
+These are cron jobs currently running, the breakdown of them is [here](#what-i-learned)
 ```
 @reboot bandit24 /usr/bin/cronjob_bandit24.sh &> /dev/null
 * * * * * bandit24 /usr/bin/cronjob_bandit24.sh &> /dev/null
@@ -36,9 +32,11 @@ do
     fi
 done
 ```
-- The cron jobs are running on a schedule where a script is scanning new scripts in /var/spool/$myname/foo and executing them as bandit24, then deleting them (the $myname variable is interchangeable with bandit24 in this example) - there is more info on this concept [here](#what-i-learned)
+- The cron jobs are running on a schedule where a script is scanning new scripts in /var/spool/$myname/foo and executing then deleting them (the $myname variable is interchangeable with bandit24 in this example) - there is more info on why [here](#what-i-learned)
 - The full script has been broken down [here](#script-breakdown)
-- Because the scripts in that directory are scanned by the cron job and executed as bandit24 with its privileges, a script placed in that directory can be used to read the /etc/bandit_pass/bandit24 password file
+
+Because the scripts in that directory are scanned by the cron job and executed as bandit24 with its privileges, a script placed in that directory can be used to read the /etc/bandit_pass/bandit24 password file.
+
 
 Created a temp directory to work from as I don't have read and write permission in current directory
 ```
@@ -54,12 +52,12 @@ Created this script in banditscript.sh which reads the password file and redirec
 ```
 cat /etc/bandit_pass/bandit24 > /tmp/tmp.JBDYQt56vj/password.txt
 ```
-Give execute and write permissions to public for script and directory so that the script can be executed by anyone i.e. bandit24 and the directory can be written into by anyone to create the password file which is where the output from 'cat' is being redirected to 
+Give execute and write permissions to public for script file and directory so that the script can be executed by anyone i.e. bandit24, and the directory can be written into by anyone to create the password file which is where the output from 'cat' will be redirected to 
 ```
 chmod +x banditscript.sh
 chmod +w .
 ```
-Copy script into the directory that is scanned by cron job
+Copy script into the directory that is scanned by cron job's scheduled script
 ```
 cp banditscript.sh /var/spool/bandit24/foo
 ```
@@ -73,7 +71,7 @@ cat password.txt
 ```
 
 ### What I learned:
-'@reboot bandit24 /usr/bin/cronjob_bandit24.sh' indicates that the script is being run as bandit24. In the next line, the '* * * * *' normally each represent a time that the script is scheduled for which are the minute, the hour, the day of the month, the month, the day of the week; in that respective order, the '*' mean **'every'** so '* * * * *' runs the script every minute of every hour of every day i.e. the * job is is running every minute to scan the directory for new scripts to execute and delete. The @reboot job runs the script once when the system starts up likely for initialisation purposes.
+In both jobs, you can see 'bandit24 /usr/bin/cronjob_bandit24.sh' indicating that the script is being run as bandit24. In the second job, the '* * * * *' normally each represent a time that the script is scheduled for which are the minute, the hour, the day of the month, the month, the day of the week; in that respective order. An asterisk (*) represents **'every'** so the '* * * * *' job is running the script and scanning directory for new scripts to execute and delete every minute of every hour of every day. The @reboot job runs the script once when the system starts up/server reboots likely for initialisation purposes.
 
 ### Script Breakdown:
 ```
