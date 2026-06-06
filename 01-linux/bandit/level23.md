@@ -12,6 +12,8 @@ Prints this into the terminal
 @reboot bandit24 /usr/bin/cronjob_bandit24.sh &> /dev/null
 * * * * * bandit24 /usr/bin/cronjob_bandit24.sh &> /dev/null
 ```
+The breakdown of this output is [here](#what-i-learned)
+
 ```
 cat /usr/bin/cronjob_bandit24.sh
 ```
@@ -38,7 +40,7 @@ do
     fi
 done
 ```
-- The cron job runs on a schedule where scripts in /var/spool/$myname/foo are executed as bandit24 then deleted (the $myname variable is interchangeable with bandit24 in this example) - there is more info on this  [here](#what-i-learned)
+- The cron job runs on a schedule where scripts in /var/spool/$myname/foo are executed as bandit24 then deleted (the $myname variable is interchangeable with bandit24 in this example) - there is more info on this concept [here](#what-i-learned)
 - The full script has been broken down [here](#script-breakdown)
 - Because the scripts in that directory are scanned by the cron job and executed as bandit24, a script placed in there can be used to read the /etc/bandit_pass/bandit24 password file
 
@@ -65,7 +67,7 @@ Copy script into the directory that is scanned by cron job
 ```
 cp banditscript.sh /var/spool/bandit24/foo
 ```
-Listed contents in tmp directory - once the cron job ran on its schedule, the script was executed automatically by it and the 
+Listed contents in tmp directory - once the cron job ran on its schedule, the script was executed
 ```
 ls 
 banditscript.sh
@@ -75,12 +77,12 @@ cat password.txt
 ```
 
 ### What I learned:
- '@reboot bandit24 /usr/bin/cronjob_bandit24.sh' indicates that the script is being run as bandit24. In the next line, the '* * * * *' each represent a time that the script is scheduled for which are the minute, the hour, the day of the month, the month, the day of the week; in that respective order i.e. @reboot means that the script is run every time the system reboots.
+'@reboot bandit24 /usr/bin/cronjob_bandit24.sh' indicates that the script is being run as bandit24. In the next line, the '* * * * *' normally each represent a time that the script is scheduled for which are the minute, the hour, the day of the month, the month, the day of the week; in that respective order, the '*' mean **'every'** so '* * * * *' runs the script every minute of every hour of every day i.e. the * job is is running every minute to scan the directory for new scripts to execute and delete. The @reboot job runs the script once when the system starts up likely for initialisation purposes.
 
 ### Script Breakdown:
-- 'for i in * .*;' means that 'i' will represent any file (*) in the current directory, and any dotfile (.*)
+- 'for i in * .*;' means that 'i' will represent any file (*) in the current directory, and any dotfile (.*).
 
-- 'if ["$i != "."] && ["$i != ".."]; then' this line iterates that if the variable 'i' (the filename as mentioned previously) is not (!=) equal to "." (in the current directory) and is not ".." (the directory above) 'then' the following block of code will be executed
+- 'if ["$i != "."] && ["$i != ".."]; then' this line iterates that if the variable 'i' (the filename as mentioned previously) is not (!=) equal to "." (in the current directory) and is not ".." (the directory above) 'then' the following block of code will be executed.
 
 - 'echo "Handling $i" the file is going to be handled by doing the following actions:
 
