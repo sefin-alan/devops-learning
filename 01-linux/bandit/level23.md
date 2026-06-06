@@ -103,7 +103,7 @@ done
 - 'echo "Handling $i" the file is going to be handled by doing the following actions:
 
  - 'owner="$(stat --format "%U" "./$i")"' - firstly checking the owner of the file
- - 'if [ "${owner}" = "bandit23" ] && [ -f "$i" ]; then' if the owner of the file is bandit23 '&&' and (meaning AND - both conditions must be true for the next action to happen) and '[-f "$i"]' if $i is a **regular file** and not a directory, then the next action will be taken
+ - 'if [ "${owner}" = "bandit23" ] && [ -f "$i" ]; then' if the owner of the file is bandit23 '&&' (meaning AND - both conditions must be true for the next action to happen) and '[-f "$i"]' if $i is a **regular file** and not a directory, then the next action will be taken
  - 'timeout -s 9 60 "./$i"' the command will be run with a time limit through 'timeout', and when it times out, '-s 9' sends signal 9, which kills the script ("./$i")
 - 'fi' ends the inner if statement
 - 'rm -rf "./$i" fi' the file is removed and the outer if is closed
