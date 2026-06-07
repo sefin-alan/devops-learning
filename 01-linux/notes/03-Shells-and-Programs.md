@@ -21,6 +21,7 @@
 
 - Each Shell has its own features and capabilities, but they all serve the same fundamental purpose of being a means to interact with the OS
 - To see which shells are available on your OS, run **cat /etc/shells**
+- You can change your current shell using `chsh -s /bin/bash` which would change your default shell to Bash; then restart your terminal to apply the change.
 
 There are different types of shells such as: Bash, Fish, Zsh, Ksh, Csh/Tcsh. The main features of some are listed below:
 
