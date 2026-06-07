@@ -50,15 +50,18 @@ ssh -i bandit26@bandit.labs.overthewire.org -p 2220
 
 
 From here, I hit 'v' to open `vim` from within `more` and then ran these `vim` commands in this order:
+
 Set the shell to Bash, changing it from showtext
 ```
 :set shell=/bin/bash
 ```
 
+
 Displayed the current shell to ensure the change was made, which displayed `shell=/usr/bin/bash` meaning that the change was successful
 ```
 :set shell?
 ```
+
 
 Opened a sub-shell within vim which is now a Bash sub-shell.
 ```
