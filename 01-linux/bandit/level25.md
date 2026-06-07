@@ -28,11 +28,13 @@ exit 0
 - You can minimise the screen so that the text is too large to fit on the screen, causing `more` to pause and partially load whatever is able to fit on the screen
 - From there, vim commands become available e.g. :set shell? - to see the current shell, :set shell=/bin/bash - to set the shell to bash, :shell - to open a sub-shell
 
-I exited and attempted the login to bandit26
+I exited and copied the sshkey for bandit26 to my home directory so that I can `ssh` into bandit26 from my local terminal; as bandit does not allow you to login from one bandit user straight to another bandit user
+
 ```
 exit
 scp -P 2220 bandit25@bandit.labs.overthewire.org:~/bandit26.sshkey ~/
 ```
+- scp uses -P while ssh uses lowercase -p when specifying the port
 - You first specify the file that will be copied i.e. ~/bandit26.sshkey, then the destination ~/ (my home directory).
 - [~/] is a shortcut for the home directory, the full path can also be used.
 
@@ -47,28 +49,26 @@ ssh -i bandit26@bandit.labs.overthewire.org -p 2220
 ![alt text](../images/morefreeze.png)
 
 
-From here, I hit 'v' to open `vim` from within `more` and then ran these `vim` commands in their respective order:
+From here, I hit 'v' to open `vim` from within `more` and then ran these `vim` commands in this order:
+Set the shell to Bash, changing it from showtext
 ```
 :set shell=/bin/bash
 ```
-This set the shell to Bash, changing it from showtext.
 
-
+Displayed the current shell to ensure the change was made, which displayed `shell=/usr/bin/bash` meaning that the change was successful
 ```
 :set shell?
 ```
-This displays the current shell i.e. the current shell is now Bash so it displayed `shell=/usr/bin/bash`.
 
-
+Opened a sub-shell within vim which is now a Bash sub-shell.
 ```
 :shell
 ```
-This opens a sub-shell within vim which is now a Bash sub-shell.
 
 
-I'm now able to interact with the filesystem and since I logged in as as bandit26 in the beginning via `ssh -i`, I am interacting with the filesystem as bandit26 so I can now read the password file
+I'm now able to interact with the filesystem as I'm now using an interactive shell (Bash) as opposed to showtext which was just a script with no ability to accept or process commands; and since I logged in as bandit26 in the beginning via `ssh -i`, I am interacting with the filesystem as bandit26 so I can now read the password file
 ```
-cat /etc/bandit_pass/bandit26S
+cat /etc/bandit_pass/bandit26
 ```
 
 ### What I learned:
