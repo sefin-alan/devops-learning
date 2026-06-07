@@ -25,4 +25,4 @@ I then submitted all combinations into port 30002 which reads line by line
 cat list.txt | nc localhost 30002
 ```
 
-**What I learned**: echo automatically adds a newline character ($) at the end of whatever it prints i.e. each time it was printing '"gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8' followed by a pincode value e.g. 0001, ($) was at the end of that combination line which is why the port was able to read each combination separately. 'cat -A' can be used to see hidden characters like the newline character.
+**What I learned**: echo automatically adds a newline character [$] at the end of whatever it prints i.e. each time it was printing '"gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8' followed by a pincode value e.g. 0001, '$' was at the end of that combination line which is why the port was able to read each combination separately. 'cat -A' can be used to see hidden characters like the newline character.
