@@ -76,8 +76,7 @@ cat /etc/bandit_pass/bandit26
 [bandit26:x:11026:11026:bandit level 26:/home/bandit26:/usr/bin/showtext]  
 ```
 - bandit26 is the username
-- x is where passwords used to be, the x indicates that the password is stored in the /etc/shadow file which is where passwords are now typically stored 
-in the encrypted /etc/shadow file (/etc/shadow is only readable by root, which is why passwords were moved to there from /etc/passwd, which is readable by everyone)
+- x is where passwords used to be, the x indicates that the password is stored in the /etc/shadow file which is where passwords are now typically stored (/etc/shadow is only readable by root, which is why passwords were moved to there from /etc/passwd, which is readable by everyone)
 - 11026 is the user numerical id, followed by the group numerical id
 - bandit level 26 is a comment field
 - /home/bandit26 is the home folder for that particular user
