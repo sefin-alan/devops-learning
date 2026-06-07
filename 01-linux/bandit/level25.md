@@ -48,23 +48,25 @@ ssh -i bandit26@bandit.labs.overthewire.org -p 2220
 
 
 From here, I hit 'v' to open `vim` from within `more` and then ran these `vim` commands in their respective order:
-
-This set the shell to Bash, changing it from showtext.
 ```
 :set shell=/bin/bash
 ```
+This set the shell to Bash, changing it from showtext.
 
-This displays the current shell i.e. the current shell is now Bash so it displayed `shell=/usr/bin/bash`.
+
 ```
 :set shell?
 ```
+This displays the current shell i.e. the current shell is now Bash so it displayed `shell=/usr/bin/bash`.
 
-This opens a sub-shell within vim which is now a Bash sub-shell.
+
 ```
 :shell
 ```
+This opens a sub-shell within vim which is now a Bash sub-shell.
 
-I'm now able to interact with the filesystem and since I did `ssh -i` as bandit26 in the beginning, I am interacting as bandit26 so I can now read the password file
+
+I'm now able to interact with the filesystem and since I logged in as as bandit26 in the beginning via `ssh -i`, I am interacting with the filesystem as bandit26 so I can now read the password file
 ```
 cat /etc/bandit_pass/bandit26S
 ```
