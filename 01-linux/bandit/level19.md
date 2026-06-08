@@ -8,4 +8,4 @@ Use the SUID which runs as the bandit20 user, to temporarily gain read permissio
 ./bandit20-do cat /etc/bandit_pass/bandit20
 ```
 
-**What I learned:** 'setuid' allows users to run an executable with the permissions of the owner. The setuid binary will have an 's' in the file permissions.
+**What I learned:** A 'setuid' allows users to run an executable with the permissions of the owner. The setuid binary will have an 's' in the file permissions.
