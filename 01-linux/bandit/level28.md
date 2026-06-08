@@ -43,7 +43,7 @@ Date:   Fri Apr 3 15:17:37 2026 +0000
     initial commit of README.md
 ```
 
-Switch to the second commit where 'missing data' was added using its commit hash then read the file so view its content at that stage
+The password is most likely in the second commit where 'missing data' was added, switch to this commit using its commit hash then read the file to view its content at that stage
 ```
 git checkout a1487fd098591dfa210ede70ba60f7093f47d20d
 HEAD is now at a1487fd add missing data
