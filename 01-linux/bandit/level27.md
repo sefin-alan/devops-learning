@@ -5,7 +5,7 @@ Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
 ## Method
 Ensure git is installed locally, clone the repository to local machine, find the password inside it
 
-Check if git has been installed
+Check if git has been installed, `git version` also works
 ```
 git --version
 git version 2.43.0
