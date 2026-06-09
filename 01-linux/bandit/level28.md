@@ -43,7 +43,7 @@ Date:   Fri Apr 3 15:17:37 2026 +0000
     initial commit of README.md
 ```
 
-The password is most likely in the second commit where 'missing data' was added, switch to this commit using its commit hash then read the file to view its content at that stage
+The password is most likely in the second commit where 'missing data' was added, switch to this [commit](#what-i-learned) using its commit hash then read the file to view its content at that stage
 ```
 git checkout a1487fd098591dfa210ede70ba60f7093f47d20d
 HEAD is now at a1487fd add missing data
@@ -57,7 +57,14 @@ Some notes for level29 of bandit.
 - password: 4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7
 ```
 
-**What I learned:** Using `git checkout` on a specific commit puts you in **detached HEAD** state, meaning that you're no longer on a branch, and `git log` will only show the commit history up to that commit. You can run `git checkout master` to get back to the full history. 
+### What I learned: 
+A **commit** is when changes have been made and saved/submitted to Git. Each commit has a unique ID, an author, a date, and a message describing the change.
+
+A **branch** is a parallel version of a project (all files), allowing for different people or the same person to work on different things without interfering with each other so any branch can have its own series of commits.
+
+A **path** is a file or folder that when passed to `git log`, filters the commit history down to only commits that made a change to that specific file.
+
+Using `git checkout` on a specific commit puts you in **detached HEAD** state, meaning that you're no longer on a branch, and `git log` will only show the commit history up to that commit. You can run `git checkout master` to get back to the full history. 
 
 **Important Note**: `--` before a filename is important for ensuring that `git` treats the following input as a file.
 
