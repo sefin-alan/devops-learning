@@ -5,6 +5,17 @@ qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
 ## Method
 The start of this level is the same as the previous two levels
 ```
+# Bandit Notes
+Some notes for level30 of bandit.
+
+## credentials
+
+- username: bandit29
+- password: <no passwords in production>
+```
+
+Checked the commit history of README.md to see if any changes were made
+```
 git log README.md
 
 commit ccda64bae05a06bd418b662bfe9b72ef3d839d78 (HEAD -> master, origin/master, origin/HEAD)
