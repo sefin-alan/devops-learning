@@ -46,4 +46,4 @@ git commit -m "Added question to key.txt"
 git push
 ```
 
-**What I learned:** `git stage` is interchangeable with `git add`. The `-f` flag was used to force the file into the staging area as the .gitignore file was preventing any text files or '*.txt' from being staged. '.gitignore' files are useful in real projects for files that you don't want to be pushed to a repo, e.g. password or config files containing sensitive information or log files that change constantly and aren't useful to track
+**What I learned:** `git stage` is interchangeable with `git add.`. The `-f` flag was used to force the file into the staging area as the .gitignore file was preventing any text files or '*.txt' from being staged. '.gitignore' files are useful in real projects for files that you don't want to be pushed to a repo, e.g. password or config files containing sensitive information or log files that change constantly and aren't useful to track
