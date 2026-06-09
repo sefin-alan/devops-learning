@@ -35,6 +35,7 @@ This only showed the commit history for the [master branch](#what-i-learned) bec
 Viewed the commit history of all branches in compact view
 ```
 git log --all --oneline
+
 ccda64b (origin/master, origin/HEAD, master) fix username
 4a8f414 (HEAD, origin/dev) add data needed for development
 8335f3d (origin/sploits-dev) add some silly exploit, just for shit and giggles
