@@ -15,16 +15,16 @@ Details:
     Branch: master
 ```
 
-Created key.txt and added requested content to within repo, then pushed it to the remote repo
+Created key.txt and added requested content to within repo, then pushed it to the remote repo (`git stage` is interchangeable with `git add .`)
 ```
 echo 'May I come in?' > key.txt
 
 git stage key.txt
 hint: use -f if you really want to add them
 ```
-There was something preventing the key.txt file from being staged
+There was something preventing the key.txt file from being staged normally
 
-Viewed all files including hidden ones
+Viewed all files including hidden files
 ```
 ls -a
 . .. .git .gitignore key.txt README.txt
@@ -34,7 +34,7 @@ cat .gitignore
 ```
 The .gitignore file is essentially telling git to ignore **any** (represented by *) .txt files which is why `git stage` wasn't working as it should
 
-Forced the file to be staged
+Forced the file to be staged with `-f` option
 ```
 git stage -f key.txt
 git commit -m "Added question to key.txt"
@@ -46,4 +46,4 @@ git commit -m "Added question to key.txt"
 git push
 ```
 
-**What I learned:** `git stage` is interchangeable with `git add.`. The `-f` flag was used to force the file into the staging area as the .gitignore file was preventing any text files or '*.txt' from being staged. '.gitignore' files are useful in real projects for files that you don't want to be pushed to a repo, e.g. password or config files containing sensitive information or log files that change constantly and aren't useful to track
+**What I learned:** '.gitignore' files are useful in real projects for files that you don't want to be pushed to a repo, e.g. password or config files containing sensitive information or log files that change constantly and aren't useful to track
