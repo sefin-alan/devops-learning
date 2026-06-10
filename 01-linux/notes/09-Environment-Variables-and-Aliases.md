@@ -4,6 +4,7 @@
 
 - a **variable** is a named value that can be stored and reused
 - an **environment variable** is a variable stored in the shell that holds information used by the system and commands
+- a **special shell variable** is a variable that is automatically set and maintained by the shell itself, that holds information about the current shell process and its execution
 - a **[shell](/01-linux/notes/03-Shells-and-Programs.md)** is the environment in which variables are set and accessed
 
 Some examples of Environment Variables are:
@@ -17,6 +18,13 @@ Some examples of Environment Variables are:
 - $UID: gives user ID of current user
 - $USER: gives the username of the current user
 - $SHELL - the shell program in use
+
+Some examples of Special Shell Variables are:
+
+- $0: holds the name/path of the currently running shell or script
+- $1,$2,$3 etc: hold arguments passed to a script
+- $?: holds the exit code of the last command that ran
+- $$: holds the process ID of the current shell
 
 ## Setting Environment Variables
 
