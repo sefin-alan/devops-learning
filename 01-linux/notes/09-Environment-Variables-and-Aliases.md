@@ -22,9 +22,9 @@ Some examples of Environment Variables are:
 Some examples of Special Shell Variables are:
 
 - $0: holds the name/path of the currently running shell or script
-- $1,$2,$3 etc: hold arguments passed to a script
+- $1-$9: The first nine arguments passed to a script
 - $?: holds the exit code of the last command that ran
-- $$: holds the process ID of the current shell
+- $$: holds the process ID (PID) of the current shell
 
 ## Setting Environment Variables
 
