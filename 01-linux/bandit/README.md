@@ -7,8 +7,8 @@ Each level documents:
 - Commands and concepts used
 - What I learned
 
-##
- Levels
+## Levels
+
 ### Linux Fundamentals
 
 - [Level 0 → 1](./level0.md) — Reading files from the command line
