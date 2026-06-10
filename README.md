@@ -27,7 +27,7 @@ Each module contains:
 
 | Module | Status | Notes | Labs | Projects |
 |--------|--------|-------|------|----------|
-| 01 - Linux | Progressing through Bandit | 9/9 | 0/0 | 0/0 |
+| 01 - Linux | Debugging SadServers | 9/9 | 1/2 | 0/0 |
 | 02 - Bash | Not Started | 0/0 | 0/0 | 0/0 |
 | 03 - Git | Not Started | 0/0 | 0/0 | 0/0 |
 | 04 - Networking | Not Started | 0/0 | 0/0 | 0/0 |
