@@ -15,9 +15,8 @@ Linux is the foundation of DevOps. Most servers, containers, and cloud infrastru
 
 ```
 01-linux/
-├── bandit/      # Solution and Notes for Bandit games
 ├── images/      # Images attached in notes from lessons     
-├── labs/        # Completed lab exercises
+├── labs/        # Completed lab exercises e.g. Bandit, SadServers
 ├── notes/       # Notes from lessons
 └── projects/    # Hands-on projects
 ```
