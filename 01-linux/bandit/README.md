@@ -74,7 +74,3 @@ Each level documents:
 - [Level 29 → 30](./level29.md) — Branch investigation
 - [Level 30 → 31](./level30.md) — Tag enumeration
 - [Level 31 → 32](./level31.md) — Source code review and hidden credential discovery
-
-### Final Challenge
-
-- [Level 33 → 34](./level33.md)
