@@ -22,7 +22,7 @@ Annabel Church  F       38      Buckingham Place, line 179
 Annabel Fuglsang        M       40      Haley Street, line 176
 ```
 
-Used awk to jump to a specific line number in a street file interview suspect
+Used awk to jump to a specific line number in a street file to interview suspect
 ```
 awk 'FNR == 179' ./mystery/streets/Buckingham_Place
 
@@ -71,5 +71,6 @@ echo 'Joe Germuska' > /mysolution
 ```
 
 **What I learned:** `grep -A `and `-B` show a number of lines after and before a matched pattern respectively. `awk 'FNR = N'` tells it to print only line number 'N' from a file.
+
 
 
