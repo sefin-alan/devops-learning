@@ -48,6 +48,7 @@ Narrowed down results to Honda cars and replaced car.txt with more accurate file
 grep -A 5 "Honda" car.txt > car2.txt
 rm car.txt
 mv car2.txt car.txt
+cat car.txt
 
 Make: Honda
 Color: Blue
@@ -59,7 +60,7 @@ Color: Blue
 Owner: Joe Germuska
 Height: 6'2
 ```
-There were other results but given clues in the crimescene, these are prime suspects
+There were other results but given the clues in the crimescene, these are the prime suspects.
 
 Searched for their addresses and interview recording, same step as with original suspect previously. Clues highlighted that killer had membership cards for Rotary_Club, Delta SkyMiles, the local library, and the Museum of Bash History.
 
