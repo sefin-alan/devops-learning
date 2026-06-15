@@ -47,7 +47,7 @@ Who is there?admin-ip-1234
 
 **SYN** stands for synchronise and when any device wants to connect to another, it sends a SYN packet first. The other device then responds with a **SYN-ACK** (synchronise-acknowledge) and the requesting device sends an ACK to confirm. This is called the **TCP three-way handshake**.
 
-By default, nmap sends a SYN packet to every port it scans. This means running `nmap localhost` was knocking every port simultaneously, which is knocking why either or both port 22 and 8080 worked as nmap had already sent a SYN to both during the scan
+By default, `nmap` sends a SYN packet to every port it scans. This means running `nmap localhost` was knocking every port simultaneously, and revealed port 22 and 8080 as potential knock ports which is knocking why either or both ports worked.
 
 `knock` sends a SYN packet to a specific port deliberately and provides no output when run.
 
