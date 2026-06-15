@@ -43,21 +43,12 @@ curl localhost
 Who is there?admin-ip-1234
 ```
 
-**What I learned:** **Port Knocking** is a security technique that keeps ports closed until a specific "knock" (SYN packet) is sent to a predefined port. Once the correct port has been knocked, the server opens the protected port temporarily
+**What I learned:** **Port Knocking** is a security technique that keeps ports closed until a specific "knock" (SYN packet) is sent to a predefined port. Once the correct port has been knocked, the server opens the protected port temporarily. This concept is used in the real world to hide servies from port scanners.
 
-By default nmap sends a SYN packet to every port it scans
-This means running nmap localhost was actually knocking every port simultaneously without you realising
-That's why both port 22 and 8080 worked — nmap had already sent a SYN to both during the scan
-knock command
-Sends a SYN packet to a specific port deliberately
-Silent by default — no output when run
-knock localhost 8080 — sends one knock to port 8080
-curl
-Used to send HTTP requests to a web server
-curl localhost — sends a request to port 80 on your own machine
-Key takeaway:
-Port knocking is a lightweight security method — no password needed, just knowing which port to knock
-Used in real world to hide services from port scanners
+**SYN** stands for synchronise and when any device wants to connect to another, it sends a SYN packet first. The other device then responds with a **SYN-ACK** (synchronise-acknowledge) and the requesting device sends an ACK to confirm. This is called the **TCP three-way handshake**.
 
-SYN stands for synchronise — it's the first step in establishing a TCP connection.
-When any device wants to connect to another it sends a SYN packet first, essentially saying "I want to start a connection". The other device then responds with a SYN-ACK (synchronise-acknowledge) and then the requesting device sends an ACK to confirm — this is called the TCP three-way handshake
+By default, nmap sends a SYN packet to every port it scans. This means running `nmap localhost` was knocking every port simultaneously, which is knocking why either or both port 22 and 8080 worked as nmap had already sent a SYN to both during the scan
+
+`knock` sends a SYN packet to a specific port deliberately and provides no output when run.
+
+`curl` is used to send HTTP requests to a web server i.e. `curl localhost` sends a request to port 80 on your own machine.
