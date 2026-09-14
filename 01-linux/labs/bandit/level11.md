@@ -7,5 +7,6 @@ Use the 'tr' command emulate ROT13 decryption
 ```
 cat data.txt | tr 'a-zA-Z' 'n-za-mN-ZA-M' 
 ```
+This maps each character in the first set to the corresponding character in the second set
 
 **What I learned:** 'a-zA-Z' is SET1 which are the characters to translate from, 'n-za-mN-ZA-M' is SET2 which are the characters to translate. The ROT13 cipher maps 'a' to 'n', 'b' is mapped to 'o' and so on, this is why SET2 starts with 'n' and goes to 'z' then back around to 'a-m' to complete the second half of the alphabet.
