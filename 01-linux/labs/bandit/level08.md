@@ -8,3 +8,5 @@ Group all the lines with 'sort', then use 'uniq' to filter duplicate lines, with
 sort data.txt | uniq -u
 ```
 **What I learned:** [[sort] data.txt](../notes/02-Commands.md) sorts all the lines into alphabetical order, grouping identical lines together -> [uniq] filters out duplicate lines -> [-u] option only prints lines that appear once
+
+- [uniq] by itself only detects duplicate lines that are next to eachother, this is why [sort] was needed.
