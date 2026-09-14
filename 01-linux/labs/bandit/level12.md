@@ -3,19 +3,22 @@
 ## Password
 FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 ## Method
-Reverse the hexdump file with the XXD program
+Reverse the hexdump file with [xxd]
 ```
 mktemp -d
 cp data.txt /tmp/tmp.9mXQpTeqeO
 cd /tmp/tmp.9mXQpTeqeO
-file data.txt
-mv data data.gz
-gunzip data.gz
-file data
-mv data data.bz2
-bzip2 -d data.bz2
-file data
-mv data data.gz
+mv data.txt new.txt
+cd /home/bandit12
+xxd -r data.txt > /tmp/tmp.9mXQpTeqe0/new.txt
+file new.txt
+mv new.txt new.gz
+gzip new.gz
+file new
+mv new new.bz2
+bzip2 -d new.bz2
+file new
+mv new data.gz
 gunzip data.gz
 file data
 mv data data.tar
@@ -37,5 +40,6 @@ gunzip data8.gz
 file data8
 cat data8
 ```
+I reversed the hexdump file with xxd, viewed the filetype, renamed the file to reflect its filetype, before decoding it with its respective extraction command.
 
-**What I learned:** Files have to be renamed to reflect their filetype before extracting them with that filetype's extraction option i.e. gzip -d extracts '.gz.' file. When extracting gzip and bzip2 the file is **replaced** by the extracted output, but with tar, the contents are extracted **alongside** the original archive, so a new file/s will appear next to it. A **hexdump** is a representation of a file's binary data displayed in hexadecimal format that is used to inspect raw file content.
+**What I learned:** Files have to be renamed to reflect their filetype before extracting them with that filetype's extraction option i.e. gzip -d extracts '.gz.' file. When extracting gzip and bzip2 the file is **replaced** by the extracted output, but with tar, the contents are extracted **alongside** the original archive, so a new file/s will appear next to it. [tar -xf] extracts [.tar] files where [x] means extract and [f] specifies that it needs to extract from a file. A **hexdump** is a representation of a file's binary data displayed in hexadecimal format that is used to inspect raw file content.
